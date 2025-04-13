@@ -13,6 +13,7 @@ public class Alumno {
     private String nombre;
     private String apellido;
 
-    @Column(name = "id_materia")
-    private Long idMateria;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "materia_id")
+    private Materia materia;
 }

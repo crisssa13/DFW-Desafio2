@@ -12,7 +12,7 @@ import sv.edu.udb.repository.MateriaRepository;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
-public class Practica1ApplicationTests {
+public class Practica2ApplicationTests {
 
 	@Autowired
 	private AlumnoRepository alumnoRepository;

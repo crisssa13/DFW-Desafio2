@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS alumno;
+DROP TABLE IF EXISTS materia;
+
 CREATE TABLE materia (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL
@@ -7,6 +10,6 @@ CREATE TABLE alumno (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     apellido VARCHAR(255) NOT NULL,
-    id_materia BIGINT,
-    FOREIGN KEY (id_materia) REFERENCES materia(id)
+    materia_id BIGINT,
+    FOREIGN KEY (materia_id) REFERENCES materia(id)
 );
